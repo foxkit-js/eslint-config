@@ -1,0 +1,22 @@
+{
+  "name": "@foxkit/eslint-config",
+  "version": "0.0.0",
+  "description": "Shareable ESLint config for foxkit-js packages",
+  "main": "index.js",
+  "repository": "git@github.com:foxkit-js/eslint-config.git",
+  "author": "Mitsunee <michelle@mitsunee.com>",
+  "license": "MIT",
+  "prettier": "@foxkit/internal/prettier",
+  "eslintConfig": {
+    "extends": "."
+  },
+  "dependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0"
+  },
+  "devDependencies": {
+    "@foxkit/internal": "^2.0.1",
+    "clean-publish": "^3.0.3",
+    "prettier": "^2.4.1"
+  }
+}
