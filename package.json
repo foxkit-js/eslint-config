@@ -18,5 +18,8 @@
     "@foxkit/internal": "^2.0.1",
     "clean-publish": "^3.0.3",
     "prettier": "^2.4.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
