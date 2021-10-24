@@ -10,14 +10,14 @@
   "eslintConfig": {
     "extends": "."
   },
-  "dependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0"
-  },
   "devDependencies": {
     "@foxkit/internal": "^2.0.1",
     "clean-publish": "^3.0.3",
     "prettier": "^2.4.1"
+  },
+  "peerDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0"
   },
   "publishConfig": {
     "access": "public"
