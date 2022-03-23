@@ -6,20 +6,34 @@
   "repository": "git@github.com:foxkit-js/eslint-config.git",
   "author": "Mitsunee <michelle@mitsunee.com>",
   "license": "MIT",
-  "prettier": "@foxkit/internal/prettier",
   "eslintConfig": {
     "extends": "."
   },
   "devDependencies": {
-    "@foxkit/internal": "^2.0.1",
-    "clean-publish": "^3.0.3",
-    "prettier": "^2.4.1"
+    "clean-publish": "^4.0.0",
+    "prettier": "^2.6.0"
   },
   "peerDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0"
   },
+  "files": [
+    "rules.js",
+    "index.js"
+  ],
   "publishConfig": {
     "access": "public"
+  },
+  "clean-publish": {
+    "withoutPublish": true,
+    "tempDir": "tmp",
+    "packageManager": "yarn",
+    "fields": [
+      "scripts",
+      "packageManager"
+    ],
+    "files": [
+      ".prettierrc.json"
+    ]
   }
 }
